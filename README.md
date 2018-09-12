@@ -10,8 +10,6 @@ Criar o projeto pelo spring.io:
 
 //https://spring.io////https://start.spring.io/
 
-Maven Project 1.4.0
-
 org.axonframework.sample.axonbank
 axonbank
 axonbank

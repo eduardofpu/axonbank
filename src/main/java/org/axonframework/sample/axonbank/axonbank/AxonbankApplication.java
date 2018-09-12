@@ -48,7 +48,6 @@ public class AxonbankApplication {
                        cause.printStackTrace();
 					}
 				});
-
 	}
 
 	@Bean
@@ -60,7 +59,6 @@ public class AxonbankApplication {
 	public EntityManagerProvider entityManagerProvider(){
       return new ContainerManagedEntityManagerProvider();
 	}
-
 
 	@Bean
 	public EventStorageEngine eventStorageEngine(){

@@ -46,7 +46,6 @@ public class Account {
         }
     }
 
-
     @EventSourcingHandler
     public void on(AccountCreatedEvent event){
         this.accountId = event.getAccountId();

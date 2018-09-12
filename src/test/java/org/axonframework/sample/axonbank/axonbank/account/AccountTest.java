@@ -9,14 +9,12 @@ import org.axonframework.test.Fixtures;
 import org.junit.Before;
 import org.junit.Test;
 
-
 public class AccountTest {
 
     private  FixtureConfiguration<Account> fixture;
     @Before
     public void setUp() throws Exception{
         fixture = Fixtures.newGivenWhenThenFixture(Account.class);
-
     }
 
     @Test
@@ -25,7 +23,6 @@ public class AccountTest {
         fixture.givenNoPriorActivity()
                 .when(new CreateAccountCommand("1234",1000))
                 .expectEvents(new AccountCreatedEvent("1234",1000));
-
     }
 
     @Test
@@ -34,7 +31,6 @@ public class AccountTest {
         fixture.given(new AccountCreatedEvent("1234",1000))
                 .when(new WithdrawMoneyComand("1234",600))
                 .expectEvents(new MoneyWithdrawnEvent("1234",600, -600));
-
     }
 
     @Test
@@ -44,7 +40,6 @@ public class AccountTest {
                 .when(new WithdrawMoneyComand("1234",1001))
                 .expectNoEvents()
                 .expectException(OverdraftLimitExceededException.class);
-
     }
 
     @Test
@@ -55,5 +50,4 @@ public class AccountTest {
                .expectNoEvents()
                .expectException(OverdraftLimitExceededException.class);
     }
-
 }
