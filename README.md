@@ -1,21 +1,12 @@
-# Descrição do problema 
+# Axon
 
 ```sh
-Este projeto oferece um serviço de backend para cadastrar cidade e clientes
-Acesse o site :
-
-https://customers-challenge.herokuapp.com
-
-e teste as rotas descritas abaixo...
-
-caso deseje baixe o projeto para executar com  o postgres ou o H2 na porta localhot:8080
+Objetivo usar Axon com String, java e Kotlin
 ```
  
-## 1. Dependências
+## 1. Spring.io
 
-Criar o projeto pelo spring.io:
-
-    
+Criar o projeto pelo spring.io:    
 
 //https://spring.io////https://start.spring.io/
 
@@ -48,7 +39,7 @@ $ ST UP RUNTIME COMPONENTS USING CONFIGURATION API
 ```
 
  
-## 3. Executando o Projeto
+## 3. Objetivo
  
 
 ```sh
